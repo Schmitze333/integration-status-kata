@@ -1,0 +1,15 @@
+{
+    "name": "on-prem-importer",
+    "private": true,
+    "scripts": {
+        "prettify": "prettier \"**/*.{ru,rb,yml,yaml,md}\" --ignore-path=\".gitignore\"",
+        "lint": "npm run prettify -- --check",
+        "format": "npm run prettify -- --write"
+    },
+    "devDependencies": {
+        "@invisionag/prettier-config-ivx": "^3.0.1",
+        "@prettier/plugin-ruby": "^2.0.0",
+        "prettier": "^2.5.1"
+    },
+    "prettier": "@invisionag/prettier-config-ivx"
+}
